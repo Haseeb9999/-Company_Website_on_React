@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* div, p, img{
+    height: auto;
+    border: 2px solid rebeccapurple;
+} */
+
+/* body{
+    background-color: gray;
+    color: aliceblue;
+} */
+
+.cardradius {
+    border-radius: 5%;
+}
+
+.imground {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.imground:hover {
+    opacity: 1;
+}
+
+.mkbdh:hover {
+    color: gold;
+    transition: all 0.7s ease;
+}
+
+@media screen and (min-width: 645px) {
+    .tlb {
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+    }
+}
+
+@media screen and (min-width: 645px) {
+    .tr {
+        border-top-right-radius: 10%;
+    }
+}
+
+@media screen and (min-width: 645px) {
+    .br {
+        border-bottom-right-radius: 10%;
+    }
+}
